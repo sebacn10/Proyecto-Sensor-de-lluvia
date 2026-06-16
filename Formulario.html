@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Formulario </title>
+</head>
+<body>
+    <h1> Registro del Sistema de Tendedero Automático </h1>
+
+    <h4> <a href="Presentacion.html">Presentacion</a> / <a href="proyecto.html">Proyecto</a> / <a href="recursos.html">Recursos</a> / <a href="profesores.html">Profesores</a> / <a href="colegio.html">Colegio</a> / <a href="alumnos.html">Alumnos</a> / <a href="opinion.html">Opinion</a> / <a href="cierre.html">Cierre</a> / <a href="Formulario.html">Formulario</a> </h4>  
+  
+    <form>
+
+        <label for="nombre">Nombre del usuario:</label>
+        <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingrese su nombre"
+            minlength="3"
+            maxlength="30"
+            required>
+        <br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="Ingrese su apellido"
+            minlength="3"
+            maxlength="30"
+            required>
+        <br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="ejemplo@gmail.com"
+            required>
+        <br><br>
+
+        <label for="edad">Edad:</label>
+        <input
+            type="number"
+            id="edad"
+            name="edad"
+            min="15"
+            max="100"
+            placeholder="Ingrese su edad"
+            required>
+        <br><br>
+
+        <label for="telefono">Número de teléfono:</label>
+        <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="3871234567"
+            pattern="[0-9]{10}"
+            required>
+        <br><br>
+
+        <label for="estado">Estado detectado por el sensor de lluvia:</label>
+        <select id="estado" name="estado" required>
+            <option value="">Seleccione una opción</option>
+            <option value="sin_lluvia">Sin lluvia</option>
+            <option value="lluvia_leve">Lluvia leve</option>
+            <option value="lluvia_moderada">Lluvia moderada</option>
+            <option value="lluvia_intensa">Lluvia intensa</option>
+        </select>
+        <br><br>
+
+        <label for="tiempo">Tiempo de respuesta del sistema (segundos):</label>
+        <input
+            type="number"
+            id="tiempo"
+            name="tiempo"
+            min="1"
+            max="60"
+            placeholder="Entre 1 y 60 segundos"
+            required>
+        <br><br>
+
+        <label for="comentarios">Observaciones sobre el funcionamiento:</label>
+        <textarea
+            id="comentarios"
+            name="comentarios"
+            placeholder="Describa el comportamiento del tendedero automático..."
+            minlength="10"
+            maxlength="300"
+            required></textarea>
+        <br><br>
+
+        <button type="submit">Enviar Registro</button>
+        <button type="reset">Limpiar Formulario</button>
+
+    </form>
+ <hr> </hr>
+</body>
+</html>
